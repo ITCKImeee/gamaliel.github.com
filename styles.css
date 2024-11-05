@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('LATAR.jpg'); /* Mengubah gambar latar belakang menjadi LATAR.jpg */
+    background-size: cover; /* Mengatur ukuran gambar agar menutupi seluruh area */
+    background-position: center; /* Mengatur posisi gambar di tengah */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.profile-card {
+    background: white;
+    border: 2px solid black; /* Menambahkan border hitam */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 40px; /* Meningkatkan padding untuk ukuran card */
+    text-align: center;
+    width: 90vw; /* Menggunakan 90% dari lebar viewport */
+    max-width: 500px; /* Maksimal lebar card */
+}
+
+.profile-name {
+    margin: 10px 0 5px;
+    font-size: 2rem; /* Menggunakan rem untuk ukuran font */
+    font-weight: bold; /* Menambahkan font bold */
+}
+
+.profile-title {
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.profile-bio {
+    font-size: 1rem; /* Menggunakan rem untuk ukuran font */
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.profile-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Jarak antara ikon */
+    margin-top: 20px;
+}
+
+.profile-button {
+    display: inline-block;
+    font-size: 2rem; /* Ukuran ikon */
+    color: black; /* Mengubah warna ikon menjadi hitam */
+    text-decoration: none;
+    transition: color 0.3s; /* Animasi saat hover */
+}
+
+.profile-button:hover {
+    color: #0056b3; /* Warna ikon saat hover */
+}
+
+/* Media Queries untuk responsivitas */
+@media (max-width: 600px) {
+    .profile-card {
+        padding: 20px; /* Mengurangi padding di layar kecil */
+    }
+
+    .profile-name {
+        font-size: 1.5rem; /* Mengurangi ukuran font di layar kecil */
+    }
+
+    .profile-bio {
+        font-size: 0.9rem; /* Mengurangi ukuran font di layar kecil */
+    }
+}
